@@ -40,6 +40,16 @@ import pandas as pd
 df=pd.read_csv("/content/Encoding Data.csv")
 df
 ```
+![Screenshot 2025-04-22 104753](https://github.com/user-attachments/assets/cc1374ab-17d0-46e5-aa08-24f79ba273f7)
+```
+#ordinal encoding
+from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
+pm = ['Hot','Warm','Cold']
+e1 = OrdinalEncoder(categories=[pm])
+e1.fit_transform(df[["ord_2"]])
+```
+![image](https://github.com/user-attachments/assets/c68b963c-9a06-4d97-ae6b-4842b7715597)
+
 
 
        
